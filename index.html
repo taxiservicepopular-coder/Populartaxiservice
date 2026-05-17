@@ -6,10 +6,10 @@
     
     <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE_HERE" />
     
-    <title>POPULAR TAXI SERVICE RAICHUR - Premium Car Rental & Outstation Cabs</title>
-    <meta name="description" content="Book affordable outstation cabs, premium tours, and 24/7 airport drops with Popular Taxi Service Raichur. Safe rides to Hyderabad, Bangalore, Hubli, Mantralayam, Goa.">
-    <meta name="keywords" content="popular taxi service raichur, taxi service in raichur, raichur to hyderabad taxi, raichur to bangalore cab, raichur to mantralayam cab, raichur airport taxi, car rental raichur">
-    <meta name="author" content="Popular Taxi Service Raichur">
+    <title>RAICHUR TAXI SERVICE (RTS) - Best Taxi & Cab Service in Raichur</title>
+    <meta name="description" content="Book affordable outstation cabs, premium tours, and 24/7 airport drops with Raichur Taxi Service (RTS). Safe rides to Hyderabad, Bangalore, Hubli, Mantralayam, Goa.">
+    <meta name="keywords" content="raichur taxi service, taxi service in raichur, rts raichur, raichur to hyderabad taxi, raichur to bangalore cab, car rental raichur">
+    <meta name="author" content="Raichur Taxi Service">
 
     <link rel="icon" type="image/png" href="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000329703.png">
     
@@ -25,240 +25,1057 @@
             scroll-behavior: smooth;
             background-color: #fcfcfc;
         }
-        h1, h2, h3 {
+        h1, h2, h3, h4 {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
         }
 
-        /* Luxury Header */
-        header {
-            background-color: #ffffff;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 4px solid #f39c12;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        header .logo-container {
+        /* Top Action Notification Strip Layout */
+        .top-strip {
+            background-color: #000000;
+            padding: 10px;
             display: flex;
-            align-items: center;
             justify-content: center;
             gap: 15px;
-            flex-wrap: wrap;
         }
-        header img {
-            max-width: 85px;
+        .strip-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+            text-decoration: none;
+            padding: 8px 22px;
+            font-weight: bold;
+            font-size: 0.95em;
+            border-radius: 6px;
+        }
+        .btn-blue { background-color: #00a8ff; }
+        .btn-cyan { background-color: #00bcbc; }
+
+        /* Branding Corporate Header Layout */
+        header {
+            background-color: #1a1a1a;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 3px solid #f39c12;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .brand-box {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .brand-box img {
+            max-width: 65px;
             height: auto;
+            border-radius: 50px;
         }
-        header h1 {
-            color: #1e3c72;
-            font-size: 2.5em;
-            font-weight: 800;
-            letter-spacing: 1px;
+        .brand-box h1 {
+            color: #ffffff;
+            font-size: 1.8em;
+            letter-spacing: 0.5px;
         }
-        header p {
-            font-style: italic;
-            color: #7f8c8d;
-            margin: 5px 0 0;
-            font-size: 1.1em;
+        .menu-icon {
+            color: white;
+            font-size: 2.2em;
+            cursor: pointer;
         }
 
-        /* Hero Banner Section with Premium Background Wallpaper */
+        /* Hero Banner with Modern Blurred City Lights Background Image */
         #home {
-            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
             color: white;
-            padding: 120px 20px;
+            padding: 90px 20px 120px;
             text-align: center;
         }
         #home h2 {
             font-size: 3.2em;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+            margin-bottom: 10px;
+            font-weight: 800;
         }
         #home p {
-            font-size: 1.5em;
-            margin-bottom: 35px;
-            opacity: 0.95;
+            font-size: 1.4em;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+
+        /* Top Inline Search Keywords Tags Layout */
+        .top-searches {
+            margin-top: 25px;
+            font-size: 0.95em;
+            color: #ccc;
+        }
+        .search-tag {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            padding: 5px 15px;
+            margin: 5px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: #ffffff;
+        }
+
+        /* Modern Tabs Interactive Booking Engine Component Box */
+        .engine-container {
+            max-width: 550px;
+            margin: -50px auto 40px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            overflow: hidden;
+            border: 3px solid #b8eb13;
+        }
+        .tabs-primary {
+            display: flex;
+        }
+        .tab-p {
+            flex: 1;
+            padding: 14px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+        .tab-p.active { background: #4a77bc; color: white; }
+        .tab-p.green { background: #7bed9f; color: #2f3542; }
+        .tab-p.lightgreen { background: #2ed573; color: white; }
+        
+        .tabs-secondary {
+            display: flex;
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
+        }
+        .tab-s {
+            flex: 1;
+            padding: 12px;
+            font-weight: bold;
+            background: #f1f2f6;
+            color: #333;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95em;
+        }
+        .tab-s.active { background: #f1c40f; color: #000000; }
+
+        .engine-form {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background: #ffffff;
+        }
+        .engine-form input, .engine-form select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 2px solid #cccccc;
+            box-sizing: border-box;
+            font-size: 1em;
+            color: #333;
+        }
+        .engine-form button {
+            background: #e67e22;
+            color: white;
+            font-weight: bold;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(230,126,34,0.3);
+        }
+
+        /* Clean Corporate About Text Box Layout */
+        .about-section {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        .about-section h2 {
+            font-size: 2.4em;
+            color: #11171a;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+        .about-section p {
+            font-size: 1.15em;
+            color: #555555;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            text-align: justify;
         }
         
-        /* Floating Style Action Buttons on Banner */
-        .banner-buttons {
+        /* Modern Structured Pill Badges */
+        .badge-container {
             display: flex;
             justify-content: center;
             gap: 15px;
             flex-wrap: wrap;
-            margin-top: 20px;
+            margin-bottom: 40px;
         }
-        .banner-btn {
+        .badge {
+            background-color: #eef2f7;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 0.95em;
+            color: #2c3e50;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        /* Mid-Page Call-To-Action Banner Component Box */
+        .action-banner {
+            background: linear-gradient(135deg, #11171a, #1e272e);
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+            border-radius: 15px;
+            max-width: 1000px;
+            margin: 40px auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+        }
+        .action-banner h3 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .action-banner p {
+            font-size: 1.2em;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+        .action-btns {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .act-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 35px;
+            color: #333333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            border-radius: 50px;
+            background: #ffffff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .act-btn-green { background: #2ecc71; color: white; }
+
+        /* Categorized High-Contrast Service Cards Layout Node */
+        .category-container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .category-container h2 {
+            font-size: 2.4em;
+            color: #11171a;
+            margin-bottom: 30px;
+            font-weight: 800;
+        }
+        .category-card {
+            background: linear-gradient(to bottom, #11998e, #38ef7d);
+            color: white;
+            padding: 35px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        .category-card h3 {
+            font-size: 1.9em;
+            margin-bottom: 12px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 5px;
+            font-weight: 700;
+        }
+        .category-card p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .category-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+        }
+        .category-list li {
             display: flex;
             align-items: center;
             gap: 10px;
-            padding: 15px 35px;
-            color: white;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+        .category-list ion-icon { font-size: 1.2em; }
+        .c-book-btn {
+            display: inline-block;
+            background: #ffb142;
+            color: #000000;
+            padding: 12px 40px;
             text-decoration: none;
-            font-size: 1.2em;
-            font-weight: bold;
-            border-radius: 50px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            transition: transform 0.2s;
-        }
-        .banner-btn:hover {
-            transform: scale(1.05);
-        }
-        .banner-call { background-color: #e67e22; }
-        .banner-whatsapp { background-color: #2ecc71; }
-
-        /* Booking Form Section (Premium Deep Teal Color) */
-        #booking {
-            background-color: #006266;
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        #booking h2 {
-            font-size: 2.5em;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            color: #f39c12;
-        }
-        .booking-form {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 15px;
-            max-width: 600px;
-            margin: 0 auto;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-        .form-group {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-bottom: 15px;
-        }
-        @media (max-width: 600px) {
-            .form-group { grid-template-columns: 1fr; }
-        }
-        .booking-form input, .booking-form select {
-            width: 100%;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-            box-sizing: border-box;
-            font-size: 1em;
-        }
-        .booking-form button {
-            background-color: #f39c12;
-            color: white;
-            border: none;
-            padding: 14px 40px;
-            font-size: 1.1em;
             font-weight: bold;
             border-radius: 8px;
-            cursor: pointer;
-            width: 100%;
-            transition: background 0.2s;
-            text-transform: uppercase;
-        }
-        .booking-form button:hover { background-color: #e67e22; }
-
-        /* Services Grid (Soft Premium Light Blue-Gray Background) */
-        #services {
-            background-color: #eef2f7;
-            padding: 80px 20px;
-            text-align: center;
-        }
-        #services h2 {
-            color: #1e3c72;
-            margin-bottom: 45px;
-            font-size: 2.6em;
-        }
-        #services .services-grid {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-        #services .service-card {
-            background: white;
-            border-radius: 15px;
-            padding: 35px;
-            width: 300px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border-top: 5px solid #f39c12;
-        }
-        #services ion-icon {
-            font-size: 4em;
-            color: #1e3c72;
-            margin-bottom: 15px;
-        }
-        #services h3 {
-            color: #2c3e50;
-            margin-bottom: 12px;
-            font-size: 1.5em;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
-        /* Comprehensive Routes Section (Dark Matte Charcoal Background) */
-        #routes {
-            background-color: #1e272e;
-            color: white;
-            padding: 80px 20px;
+        /* Section Heading Labels */
+        .section-title-alt {
             text-align: center;
-        }
-        #routes h2 {
-            margin-bottom: 45px;
             font-size: 2.6em;
-            color: #f39c12;
-            text-transform: uppercase;
+            color: #11171a;
+            margin: 60px 0 35px;
+            font-weight: 800;
         }
-        #routes .routes-grid {
+
+        /* 20 Clean Node Intercity Routes Block Grid Layout */
+        .routes-grid {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 25px;
-            max-width: 1400px;
-            margin: 0 auto;
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            padding: 0 20px;
         }
-        #routes .route-card {
-            background-color: #ffffff;
-            color: #333;
-            border-radius: 15px;
+        .route-card {
+            background: white;
+            border-radius: 12px;
             overflow: hidden;
-            width: 310px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-            transition: transform 0.3s;
+            width: 340px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
         }
-        #routes .route-card:hover {
-            transform: scale(1.02);
-        }
-        #routes .route-card img {
+        .route-card img {
             width: 100%;
-            height: 170px;
+            height: 190px;
             object-fit: cover;
         }
-        #routes .route-details {
+        .route-details {
             padding: 20px;
-            text-align: left;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
-        #routes h3 {
+        .route-details h4 {
+            font-size: 1.4em;
             color: #1e3c72;
-            font-size: 1.35em;
-            margin-bottom: 8px;
+            margin: 0 0 15px 0;
             font-weight: 700;
         }
-        #routes p {
-            color: #555;
-            font-size: 0.9em;
+        .route-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .r-btn {
+            flex: 1;
+            text-align: center;
+            padding: 11px 0;
+            font-weight: bold;
+            font-size: 0.95em;
+            text-decoration: none;
+            border-radius: 6px;
+            color: white;
+        }
+        .r-btn-orange { background-color: #ff5e13; }
+        .r-btn-darkorange { background-color: #ff3f34; }
+
+        /* Premium Branded High-Contrast Vehicle Fleet Component Layout */
+        .fleet-section {
+            background: linear-gradient(180deg, #ff5e13 0%, #ff8c1a 100%);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+        .fleet-section h2 {
+            font-size: 2.6em;
             margin-bottom: 15px;
-            height: 36px;
-            line-height: 1.4;
+            font-weight: 800;
+        }
+        .fleet-section p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        .fleet-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .fleet-card {
+            background: #ffffff;
+            color: #333333;
+            border-radius: 12px;
+            padding: 25px;
+            width: 330px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .ac-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #2f3542;
+            color: white;
+            font-weight: bold;
+            font-size: 0.75em;
+            padding: 4px 10px;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+        .fleet-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        .fleet-card h4 {
+            font-size: 1.4em;
+            color: #111111;
+            margin: 0 0 5px 0;
+            font-weight: 700;
+            text-align: left;
+        }
+        .fleet-card p {
+            font-size: 0.95em;
+            color: #7f8c8d;
+            margin: 0 0 20px 0;
+            text-align: left;
         }
         
-        /* Action Buttons Layout */
-        .action-buttons {
+        .fleet-actions {
             display: flex;
             gap: 10px;
         }
-        .btn {
+        .f-btn {
             flex: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 12px 0;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.95em;
+            color: white;
+        }
+        .f-btn-orange { background-color: #ff5e13; }
+        .f-btn-green { background-color: #2ecc71; }
+
+        /* Trust Systems Grid Block */
+        .trust-section {
+            background-color: #eef2f7;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .trust-section h2 {
+            font-size: 2.4em;
+            color: #11171a;
+            margin-bottom: 40px;
+            font-weight: 800;
+        }
+        .trust-grid {
             display: flex;
-            align-items
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .trust-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 230px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c3e50;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .trust-card ior-icon, .trust-card ion-icon { font-size: 2.2em; color: #2ecc71; }
+
+        /* Secure Address Map Redirection Box */
+        #location-box {
+            background-color: #ffffff;
+            padding: 55px 20px;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+        #location-box h2 {
+            font-size: 2.4em;
+            color: #11171a;
+            margin-bottom: 30px;
+            font-weight: 800;
+        }
+        .map-card-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #dddddd;
+            text-align: center;
+        }
+        .map-card-wrapper p {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        .map-trigger {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #11171a;
+            color: white;
+            padding: 14px 35px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            font-size: 1.05em;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            transition: background 0.2s;
+        }
+        .map-trigger:hover { background-color: #f39c12; }
+
+        /* Corporate Footer Element Layout */
+        footer {
+            background-color: #0d1214;
+            color: #bdc3c7;
+            padding: 45px 20px;
+            text-align: center;
+            border-top: 4px solid #ff5e13;
+        }
+        footer p { margin: 6px 0; font-size: 1.05em; }
+        
+        /* Fixed Quick Action Sidebar Dock Links Layout */
+        .sticky-dock {
+            position: fixed;
+            right: 20px;
+            bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 9999;
+        }
+        .dock-circle {
+            width: 55px;
+            height: 55px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8em;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+        .dock-circle:hover { transform: scale(1.1); }
+        .dc-phone { background-color: #ff5e13; }
+        .dc-wa { background-color: #2ecc71; }
+        
+        /* To-Top Link scroller */
+        .scroller-top {
+            width: 38px;
+            height: 38px;
+            background-color: #00a8ff;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: fixed;
+            right: 28px;
+            bottom: 22px;
+            text-decoration: none;
+            z-index: 9999;
+            font-size: 1.25em;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-strip">
+    <a href="tel:+918277457261" class="strip-btn btn-blue"><ion-icon name="call"></ion-icon> Call Now</a>
+    <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20enquire%20for%20a%20taxi." class="strip-btn btn-cyan"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+</div>
+
+<header>
+    <div class="brand-box">
+        <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000329703.png" alt="RTS Logo">
+        <h1>Raichur Taxi Service</h1>
+    </div>
+    <div class="menu-icon"><ion-icon name="menu-outline"></ion-icon></div>
+</header>
+
+<section id="home">
+    <h2>Raichur Taxi Service</h2>
+    <p>24/7 Taxi & Cab Service in Raichur</p>
+    <div class="top-searches">
+        <strong>Top Searches : </strong>
+        <span class="search-tag">GOA</span>
+        <span class="search-tag">ANDHRA PRADESH</span>
+        <span class="search-tag">TELANGANA</span>
+        <span class="search-tag">KARNATAKA</span>
+        <span class="search-tag">MAHARASHTRA</span>
+    </div>
+</section>
+
+<div class="engine-container">
+    <div class="tabs-primary">
+        <button class="tab-p active">Outstation</button>
+        <button class="tab-p green">Local</button>
+        <button class="tab-p lightgreen">Airport</button>
+    </div>
+    <div class="tabs-secondary">
+        <button class="tab-s active">One Way</button>
+        <button class="tab-s">Round Trip</button>
+    </div>
+    <div class="engine-form">
+        <form onsubmit="window.open('https://wa.me/918277457261?text=Hello%20Raichur%20Taxi%20Service%20(RTS),%20I%20want%20to%20book%20a%20ride.%0AFrom:%20'+this.from_city.value+'%0ATo:%20'+this.to_city.value+'%0AVehicle:%20'+this.v_type.value+'%0AMobile:%20'+this.cust_phone.value); return false;">
+            <input type="text" name="from_city" placeholder="From City" required>
+            <input type="text" name="to_city" placeholder="To City" required>
+            <select name="v_type" required>
+                <option value="" disabled selected>Select Vehicle Class</option>
+                <option value="Dzire (4+1 Seater)">Dzire Sedan (4+1)</option>
+                <option value="Innova Hycross (7+1 Seater)">Innova Hycross (7+1)</option>
+                <option value="Innova Crysta (7+1 Seater)">Innova Crysta (7+1)</option>
+                <option value="Tempo Traveller (12+1 Seater)">Tempo Traveller (12+1)</option>
+                <option value="Luxury Commercial Bus">Luxury Tour Bus (40/50 Seater)</option>
+            </select>
+            <input type="tel" name="cust_phone" placeholder="Mobile No" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</div>
+
+<section class="about-section">
+    <h2>Best Taxi Service in Raichur</h2>
+    <p>We provide professional taxi services in Raichur for local and outstation travel with a strong focus on comfort, safety, and affordability. Whether you are planning a short city ride or a long-distance journey, our service ensures a smooth and stress-free experience. Our Raichur taxi service is trusted for punctuality, clean vehicles, and experienced drivers who know all major routes. We offer one-way taxi, round trips, and customized travel plans. We specialize in outstation taxi services from Raichur to Hyderabad, Bangalore, Hubli, Goa, Hampi, Coorg, and Vijayawada with 24/7 availability and instant booking via call or WhatsApp.</p>
+    
+    <div class="badge-container">
+        <div class="badge">24/7 Service</div>
+        <div class="badge">Clean Cars</div>
+        <div class="badge">Experienced Drivers</div>
+        <div class="badge">Affordable Pricing</div>
+    </div>
+</section>
+
+<div class="action-banner">
+    <h3>Book Your Taxi Now</h3>
+    <p>Fast booking • Best price • 24/7 service</p>
+    <div class="action-btns">
+        <a href="tel:+918277457261" class="act-btn"><ion-icon name="call"></ion-icon> Call Now</a>
+        <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20taxi%20instantly." class="act-btn act-btn-green"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+    </div>
+</div>
+
+<div class="category-container">
+    <h2>Our Taxi Services</h2>
+    <div class="category-card">
+        <h3>Outstation Taxi</h3>
+        <p>Travel long-distance with comfort and safety to major cities like Hyderabad, Bangalore, and Goa.</p>
+        <ul class="category-list">
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Verified Drivers</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Clean Vehicles</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Highway Safety</li>
+        </ul>
+        <a href="tel:+918277457261" class="c-book-btn">Book Now</a>
+    </div>
+
+    <div class="category-card">
+        <h3>One Way Taxi</h3>
+        <p>Pay only for one side. Budget-friendly and ideal for quick intercity travel.</p>
+        <ul class="category-list">
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon> No Return Charges</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Instant Booking</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Affordable Pricing</li>
+        </ul>
+        <a href="tel:+918277457261" class="c-book-btn">Book Now</a>
+    </div>
+
+    <div class="category-card">
+        <h3>Round Trip</h3>
+        <p>Perfect for family and business travel with flexible timing and dedicated driver.</p>
+        <ul class="category-list">
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Dedicated Cab</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Flexible Timing</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Comfortable Journey</li>
+        </ul>
+        <a href="tel:+918277457261" class="c-book-btn">Book Now</a>
+    </div>
+
+    <div class="category-card">
+        <h3>Local City Ride</h3>
+        <p>Fast and reliable rides within Raichur for daily travel, office, and shopping.</p>
+        <ul class="category-list">
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon> 24/7 Availability</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Quick Pickup</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Trusted Service</li>
+        </ul>
+        <a href="tel:+918277457261" class="c-book-btn">Book Now</a>
+    </div>
+</div>
+
+<h3 class="section-title-alt">Popular Taxi Routes from Raichur</h3>
+<div class="routes-grid">
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=400&q=80" alt="Hyderabad">
+        <div class="route-details">
+            <h4>Raichur to Hyderabad Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Hyderabad." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=400&q=80" alt="Bangalore">
+        <div class="route-details">
+            <h4>Raichur to Bangalore Cab</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Bangalore." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1542274431-75e6d62a9370?auto=format&fit=crop&w=400&q=80" alt="Hubli">
+        <div class="route-details">
+            <h4>Raichur to Hubli Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Hubli." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=400&q=80" alt="Udupi">
+        <div class="route-details">
+            <h4>Raichur to Udupi Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Udupi." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=400&q=80" alt="Mysore">
+        <div class="route-details">
+            <h4>Raichur to Mysore Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Mysore." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1600100397608-f010e4da1b61?auto=format&fit=crop&w=400&q=80" alt="Tirupati">
+        <div class="route-details">
+            <h4>Raichur to Tirupati Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Tirupati." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Goa">
+        <div class="route-details">
+            <h4>Raichur to Goa Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Goa." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=400&q=80" alt="Kurnool">
+        <div class="route-details">
+            <h4>Raichur to Kurnool Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Kurnool." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=400&q=80" alt="Bellary">
+        <div class="route-details">
+            <h4>Raichur to Bellary Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Bellary." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1600100398463-8ab3b37b375c?auto=format&fit=crop&w=400&q=80" alt="Hampi">
+        <div class="route-details">
+            <h4>Raichur to Hampi Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Hampi." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=80" alt="Gulbarga">
+        <div class="route-details">
+            <h4>Raichur to Gulbarga Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Gulbarga." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1599933310631-6f42e6bc8a4b?auto=format&fit=crop&w=400&q=80" alt="Bidar">
+        <div class="route-details">
+            <h4>Raichur to Bidar Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Bidar." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=400&q=80" alt="Vijayawada">
+        <div class="route-details">
+            <h4>Raichur to Vijayawada Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Vijayawada." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=400&q=80" alt="Gokarna">
+        <div class="route-details">
+            <h4>Raichur to Gokarna Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Gokarna." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?auto=format&fit=crop&w=400&q=80" alt="Coorg">
+        <div class="route-details">
+            <h4>Raichur to Coorg Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Coorg." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1626014303757-64174d39bc7f?auto=format&fit=crop&w=400&q=80" alt="Kuravpur">
+        <div class="route-details">
+            <h4>Raichur to Kuravpur Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Kuravpur." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1626014303757-64174d39bc7f?auto=format&fit=crop&w=400&q=80" alt="Mantralayam">
+        <div class="route-details">
+            <h4>Raichur to Mantralayam Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Mantralayam." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80" alt="Srisailam">
+        <div class="route-details">
+            <h4>Raichur to Srisailam Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Srisailam." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?auto=format&fit=crop&w=400&q=80" alt="Pithapuram">
+        <div class="route-details">
+            <h4>Raichur to Pithapuram Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Pithapuram." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="route-card">
+        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=400&q=80" alt="Atkur">
+        <div class="route-details">
+            <h4>Raichur to Atkur Taxi</h4>
+            <div class="route-actions">
+                <a href="tel:+918277457261" class="r-btn r-btn-orange">Book Now</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20cab%20for%20Raichur%20to%20Atkur." class="r-btn r-btn-darkorange">Know More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="fleet-section">
+    <h2>Our Fleet & Vehicles</h2>
+    <p>Choose from our wide range of clean and sanitized commercial vehicles</p>
+    <div class="fleet-grid">
+        <div class="fleet-card">
+            <span class="ac-badge">AC / NON AC</span>
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256801.png" alt="Dzire">
+            <h4>Dzire 4+1 Seater</h4>
+            <p>Budget-friendly city rides.</p>
+            <div class="fleet-actions">
+                <a href="tel:+918277457261" class="f-btn f-btn-orange"><ion-icon name="call"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20Dzire%20Sedan." class="f-btn f-btn-green"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+        <div class="fleet-card">
+            <span class="ac-badge">AC / NON AC</span>
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256803.png" alt="Innova Hycross">
+            <h4>Innova Hycross 7+1 Seater</h4>
+            <p>Best for group travel.</p>
+            <div class="fleet-actions">
+                <a href="tel:+918277457261" class="f-btn f-btn-orange"><ion-icon name="call"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20Innova%20Hycross." class="f-btn f-btn-green"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+        <div class="fleet-card">
+            <span class="ac-badge">AC / NON AC</span>
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256806.png" alt="Innova Crysta">
+            <h4>Innova Crysta 7+1 Seater</h4>
+            <p>Premium long-distance comfort.</p>
+            <div class="fleet-actions">
+                <a href="tel:+918277457261" class="f-btn f-btn-orange"><ion-icon name="call"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20Innova%20Crysta." class="f-btn f-btn-green"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+        <div class="fleet-card">
+            <span class="ac-badge">NON AC</span>
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256813.png" alt="Toofan Cruiser">
+            <h4>Toofan Cruiser 9+1 Seater</h4>
+            <p>Reliable commercial heavy transit cruiser master.</p>
+            <div class="fleet-actions">
+                <a href="tel:+918277457261" class="f-btn f-btn-orange"><ion-icon name="call"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20Toofan%20Cruiser." class="f-btn f-btn-green"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+        <div class="fleet-card">
+            <span class="ac-badge">AC / NON AC</span>
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256816.png" alt="Tempo Traveller">
+            <h4>Tempo Traveller 12+1 Seater</h4>
+            <p>Best for tours & large family groups.</p>
+            <div class="fleet-actions">
+                <a href="tel:+918277457261" class="f-btn f-btn-orange"><ion-icon name="call"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20Tempo%20Traveller." class="f-btn f-btn-green"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+        <div class="fleet-card">
+            <span class="ac-badge">AC / NON AC</span>
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256812.png" alt="Urbania">
+            <h4>Urbania 16+1 Seater</h4>
+            <p>Luxury long-route cruiser systems flawlessly.</p>
+            <div class="fleet-actions">
+                <a href="tel:+918277457261" class="f-btn f-btn-orange"><ion-icon name="call"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20Urbania." class="f-btn f-btn-green"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+        <div class="fleet-card">
+            <span class="ac-badge">AC / NON AC</span>
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256819.png" alt="Ashok Leyland 21">
+            <h4>Ashok Leyland 21+1 Seater</h4>
+            <p>Heavy group corporate team transit minibus configurations.</p>
+            <div class="fleet-actions">
+                <a href="tel:+918277457261" class="f-btn f-btn-orange"><ion-icon name="call"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20Ashok%20Leyland%2021%20Seater." class="f-btn f-btn-green"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+        <div class="fleet-card">
+            <span class="ac-badge">AC / NON AC</span>
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256823.png" alt="Bus 40">
+            <h4>Bus 40+1 Seater</h4>
+            <p>Massive luxury coaches for marriage events and heavy teams.</p>
+            <div class="fleet-actions">
+                <a href="tel:+918277457261" class="f-btn f-btn-orange"><ion-icon name="call"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%2040%20Seater%20Bus." class="f-btn f-btn-green"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+        <div class="fleet-card">
+            <span class="ac-badge">AC / NON AC</span>
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256823.png" alt="Bus 49">
+            <h4>Bus 49+1 Seater</h4>
+            <p>Ultimate heavy configuration tourist luxury liner systems perfectly.</p>
+            <div class="fleet-actions">
+                <a href="tel:+918277457261" class="f-btn f-btn-orange"><ion-icon name="call"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%2049%20Seater%20Bus." class="f-btn f-btn-green"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="trust-section">
+    <h2>Famous Routes Features</h2>
+    <div class="trust-grid">
+        <div class="trust-card"><ion-icon name="flash-outline"></ion-icon> 24/7 Service</div>
+        <div class="trust-card"><ion-icon name="shield-checkmark-outline"></ion-icon> Safe Drivers</div>
+        <div class="trust-card"><ion-icon name="color-filter-outline"></ion-icon> Clean Cars</div>
+        <div class="trust-card"><ion-icon name="cash-outline"></ion-icon> Best Price</div>
+    </div>
+</section>
+
+<section id="location-box">
+    <h2>Our Location</h2>
+    <div class="map-card-wrapper">
+        <p>📍 Main Office: Near Post Office Road, Opposite Androon Quilla, Raichur, Karnataka 584101</p>
+        <p>📍 Second Office: Arab Mohalla, Raichur, Karnataka 584101</p>
+        <a href="https://maps.google.com/?q=Raichur+Taxi+Service" target="_blank" class="map-trigger">
+            <ion-icon name="navigate-outline"></ion-icon> Open Google Maps Link
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 RAICHUR TAXI SERVICE (RTS). All Rights Reserved.</p>
+    <p>Safe & Reliable 24/7 Raichur Taxi Service</p>
+</footer>
+
+<div class="sticky-dock">
+    <a href="tel:+918277457261" class="dock-circle dc-phone"><ion-icon name="call"></ion-icon></a>
+    <a href="https://wa.me/918277457261?text=Hello%20RTS,%20I%20want%20to%20book%20a%20ride." class="dock-circle dc-wa"><ion-icon name="logo-whatsapp"></ion-icon></a>
+</div>
+
+<a href="#home" class="scroller-top"><ion-icon name="arrow-up-outline"></ion-icon></a>
+
+</body>
+</html>
