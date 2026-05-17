@@ -1,198 +1,708 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popular Taxi Service Raichur - 4 Seater to 50 Seater Fleet</title>
-    <meta name="description" content="Book 4 to 50 seater luxury cars, TT, Urbania, and buses from Popular Taxi Service Raichur. Safe, professional outstation and airport routes.">
+    
+    <title>POPULAR TAXI SERVICE RAICHUR - Premium Car Rental & Outstation Cabs</title>
+    <meta name="description" content="Book affordable outstation cabs, premium tours, and 24/7 airport drops with Popular Taxi Service Raichur. Cabs available from Raichur to Hyderabad, Bangalore, Hubli, Mantralayam, Goa, and more.">
+    <meta name="keywords" content="popular taxi service raichur, taxi service in raichur, raichur to hyderabad taxi, raichur to bangalore cab, raichur to mantralayam cab, raichur to hampi taxi, outstation cabs raichur, car rental raichur, travel agency raichur">
+    <meta name="author" content="Popular Taxi Service Raichur">
+
+    <link rel="icon" type="image/png" href="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000329703.png">
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
     <style>
-        /* Premium Yellow & Dark Charcoal Theme */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #1a1a1a; color: #ffffff; }
-        header { background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80'); background-size: cover; text-align: center; padding: 60px 20px; border-bottom: 5px solid #ffcc00; }
-        h1 { color: #ffcc00; margin: 0; font-size: 2.8rem; text-transform: uppercase; letter-spacing: 2px; }
-        .tagline { font-size: 1.2rem; margin: 10px 0 20px 0; color: #dddddd; }
-        nav { background-color: #111; padding: 15px; text-align: center; sticky: top; }
-        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1rem; }
-        nav a:hover { color: #ffcc00; }
-        .container { max-width: 1100px; margin: auto; padding: 20px; }
-        .btn-box { margin: 30px 0; text-align: center; }
-        .btn-call { background-color: #ffcc00; color: #000; padding: 15px 30px; text-decoration: none; font-weight: bold; font-size: 1.3rem; border-radius: 5px; margin: 10px; display: inline-block; }
-        .btn-whatsapp { background-color: #25d366; color: #fff; padding: 15px 30px; text-decoration: none; font-weight: bold; font-size: 1.3rem; border-radius: 5px; margin: 10px; display: inline-block; }
-        .section { background-color: #222; padding: 30px; margin-bottom: 30px; border-radius: 8px; border-left: 5px solid #ffcc00; }
-        h2 { color: #ffcc00; margin-top: 0; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; background-color: #2a2a2a; }
-        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #444; }
-        th { background-color: #ffcc00; color: #000; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
-        .grid-item { background: #2a2a2a; padding: 20px; border-radius: 5px; text-align: center; border: 1px solid #444; }
-        .grid-item strong { color: #ffcc00; font-size: 1.2rem; display: block; margin-bottom: 10px; }
-        .review { background: #2d2d2d; padding: 15px; border-left: 3px solid #25d366; margin-bottom: 15px; font-style: italic; }
-        .review-author { display: block; text-align: right; font-weight: bold; color: #ffcc00; font-style: normal; margin-top: 5px; }
-        footer { background-color: #111; text-align: center; padding: 20px; color: #888; border-top: 3px solid #ffcc00; }
-        .map-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 20px; border-radius: 8px; }
-        .map-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            scroll-behavior: smooth;
+            background-color: #fcfcfc;
+        }
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+        }
+
+        /* Luxury Header */
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #f39c12;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        header .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        header img {
+            max-width: 85px;
+            height: auto;
+        }
+        header h1 {
+            color: #1e3c72;
+            font-size: 2.5em;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-style: italic;
+            color: #7f8c8d;
+            margin: 5px 0 0;
+            font-size: 1.1em;
+        }
+
+        /* Hero Banner with Premium Real Car Highway Background Image */
+        #home {
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            padding: 120px 20px;
+            text-align: center;
+        }
+        #home h2 {
+            font-size: 3.2em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+        #home p {
+            font-size: 1.5em;
+            margin-bottom: 35px;
+            opacity: 0.95;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+        }
+        #home .cta-button {
+            display: inline-block;
+            background-color: #f39c12;
+            color: white;
+            padding: 16px 45px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        #home .cta-button:hover {
+            background-color: #e67e22;
+        }
+
+        /* Services Grid (Soft Premium Light Blue-Gray Background) */
+        #services {
+            background-color: #eef2f7;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        #services h2 {
+            color: #1e3c72;
+            margin-bottom: 45px;
+            font-size: 2.6em;
+        }
+        #services .services-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        #services .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 35px;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid #f39c12;
+        }
+        #services ion-icon {
+            font-size: 4em;
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+        #services h3 {
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 1.5em;
+        }
+
+        /* Comprehensive Routes Section (Dark Matte Charcoal Background) */
+        #routes {
+            background-color: #1e272e;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        #routes h2 {
+            margin-bottom: 45px;
+            font-size: 2.6em;
+            color: #f39c12;
+            text-transform: uppercase;
+        }
+        #routes .routes-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        #routes .route-card {
+            background-color: #ffffff;
+            color: #333;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 310px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+            transition: transform 0.3s;
+        }
+        #routes .route-card:hover {
+            transform: scale(1.02);
+        }
+        #routes .route-card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+        #routes .route-details {
+            padding: 20px;
+            text-align: left;
+        }
+        #routes h3 {
+            color: #1e3c72;
+            font-size: 1.35em;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        #routes p {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            height: 36px;
+            line-height: 1.4;
+        }
+        
+        /* Hidden Number Double Actions Booking Buttons */
+        #routes .action-buttons, #fleet .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 12px 0;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 0.9em;
+            color: white;
+            transition: opacity 0.2s;
+            cursor: pointer;
+            border: none;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        .btn-call {
+            background-color: #e67e22; /* Premium Orange Code for Call */
+        }
+        .btn-whatsapp {
+            background-color: #2ecc71; /* Safe Green Code for WhatsApp */
+        }
+
+        /* Fleet Grid (Royal Classic Blue Background) */
+        #fleet {
+            background-color: #1e3c72;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        #fleet h2 {
+            margin-bottom: 45px;
+            font-size: 2.6em;
+            color: #f39c12;
+        }
+        #fleet .fleet-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        #fleet .fleet-card {
+            background-color: #ffffff;
+            color: #333;
+            border-radius: 15px;
+            padding: 20px;
+            width: 270px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #fleet img {
+            width: 100%;
+            height: 160px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        #fleet h3 {
+            color: #1e3c72;
+            margin: 5px 0;
+            font-size: 1.4em;
+        }
+        #fleet p {
+            color: #7f8c8d;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+        }
+
+        /* Trust Section (Sky Cyan Blue Background) */
+        #why-choose-us {
+            background-color: #00a8ff;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        #why-choose-us h2 {
+            margin-bottom: 45px;
+            font-size: 2.6em;
+        }
+        #why-choose-us .reasons-grid {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        #why-choose-us .reason {
+            width: 300px;
+            text-align: center;
+        }
+        #why-choose-us ion-icon {
+            font-size: 4em;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        /* Footer Grid */
+        footer {
+            background-color: #11171a;
+            color: #bdc3c7;
+            padding: 50px 20px;
+            text-align: center;
+            border-top: 5px solid #f39c12;
+        }
+        footer .logo-container {
+            margin-bottom: 20px;
+        }
+        footer img {
+            max-width: 75px;
+            height: auto;
+        }
+        footer p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Popular Taxi Service Raichur</h1>
-        <p class="tagline">The Ultimate Fleet Rental Hub in Northern Karnataka | Active 24/7</p>
-        <div class="btn-box">
-            <a href="tel:+918277457261" class="btn-call">📞 Call Now: +91 82774 57261</a>
-            <a href="https://wa.me/918277457261?text=Hello+Popular+Taxi+Service,+I+want+to+book+a+vehicle." target="_blank" class="btn-whatsapp">💬 WhatsApp Booking</a>
+<header>
+    <div class="logo-container">
+        <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000329703.png" alt="POPULAR TAXI SERVICE RAICHUR Logo">
+        <h1>POPULAR TAXI SERVICE RAICHUR</h1>
+    </div>
+    <p>Your Ride, Our Passion</p>
+</header>
+
+<section id="home">
+    <h2>WELCOME TO POPULAR TAXI SERVICE RAICHUR</h2>
+    <p>Safe, Premium & Affordable Outstation Cabs Across Major Indian Cities Available 24/7</p>
+    <a href="#routes" class="cta-button">EXPLORE POPULAR ROUTES</a>
+</section>
+
+<section id="services">
+    <h2>OUR PREMIUM SERVICES</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <ion-icon name="airplane-outline"></ion-icon>
+            <h3>AIRPORT TRANSFERS</h3>
+            <p>Guaranteed on-time drops & pickups for Shamshabad Airport & Kempegowda Airport.</p>
         </div>
-    </header>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#fleet">Our Fleet</a>
-        <a href="#routes">Famous Routes</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact & Map</a>
-    </nav>
-
-    <div class="container">
-
-        <!-- HOME SECTION -->
-        <div id="home" class="section">
-            <h2>Welcome to Popular Taxi Service</h2>
-            <p>Drive with confidence across borders, commercial zones, and pilgrimage centers. Operating from Lingasugur, Raichur, we provide high-quality and premium vehicle rental solutions. From compact executive 4-seater sedans to ultra-luxury 50-seater passenger coaches, we manage individual trips, family picnics, big weddings, and corporate events with perfection.</p>
+        <div class="service-card">
+            <ion-icon name="git-branch-outline"></ion-icon>
+            <h3>LONG ROUTE TOURS</h3>
+            <p>Intercity verified tourist solutions with comfortable multi-seat setups.</p>
         </div>
-
-        <!-- ABOUT SECTION -->
-        <div id="about" class="section">
-            <h2>About Our Enterprise</h2>
-            <p>Engineered on foundations of safety, corporate transparency, and strict timing control, Popular Taxi Service Raichur has scales of fleet deployment unmatched in Northern Karnataka. All our vehicles feature verified commercial documentation, active air-conditioning, excellent clean interiors, and experienced professional highway drivers. We are available 24 hours a day, 7 days a week to assist you with your travel needs.</p>
+        <div class="service-card">
+            <ion-icon name="ribbon-outline"></ion-icon>
+            <h3>PREMIUM LOCAL DRIVES</h3>
+            <p>Well-maintained family packages & local business travel with route-specialist drivers.</p>
         </div>
+    </div>
+</section>
 
-        <!-- FLEET SECTION -->
-        <div id="fleet" class="section">
-            <h2>Our Massive Fleet Inventory & Car Options</h2>
-            <p>Choose the exact vehicle capacity according to your group requirement:</p>
-            <table>
-                <tr>
-                    <th>Vehicle Class & Capacity</th>
-                    <th>Perfect Models Available</th>
-                    <th>Key Comforts</th>
-                </tr>
-                <tr>
-                    <td><strong>4-Seater Executive Sedan</strong></td>
-                    <td>Maruti Suzuki Dzire, Toyota Etios</td>
-                    <td>Clean audio, compact airport loops, economical pricing.</td>
-                </tr>
-                <tr>
-                    <td><strong>6 / 7-Seater Premium SUV</strong></td>
-                    <td>Toyota Innova Crysta, Maruti Ertiga</td>
-                    <td>Dual AC chillers, massive luggage space, long family trips.</td>
-                </tr>
-                <tr>
-                    <td><strong>10-Seater Heavy MUV</strong></td>
-                    <td>Force Cruiser, Mahindra Toofan</td>
-                    <td>Rigid body build, optimal for rural terrains, large group capacity.</td>
-                </tr>
-                <tr>
-                    <td><strong>13-Seater Commercial Tourer</strong></td>
-                    <td>Force Tempo Traveller (13-Seat TT)</td>
-                    <td>Pushback reclining seats, high roof, long outstation loops.</td>
-                </tr>
-                <tr>
-                    <td><strong>16-Seater Next-Gen Premium Van</strong></td>
-                    <td>Luxury Force Urbania Executive</td>
-                    <td>Premium luxury styling, individual airflow consoles, corporate tours.</td>
-                </tr>
-                <tr>
-                    <td><strong>22-Seater Intermediate Mini Bus</strong></td>
-                    <td>Eicher / Tata Mini Passenger Coach</td>
-                    <td>Massive center aisle spacing, smooth wedding group transfers.</td>
-                </tr>
-                <tr>
-                    <td><strong>40-Seater & 50-Seater Ultra-Luxury Coach</strong></td>
-                    <td>Air-Suspension Luxury Multi-Axle Carrier</td>
-                    <td>Ultimate mass transit solution, massive underneath cargo trunks.</td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- ROUTES & KEYWORDS SECTION -->
-        <div id="routes" class="section">
-            <h2>Highly Targeted Famous Routes (Our Specialization)</h2>
-            <p>We run frequent premium commercial trips from Raichur and Lingasugur to these high-volume sectors daily:</p>
-            <div class="grid">
-                <div class="grid-item">
-                    <strong>Raichur to Hyderabad Airport / City</strong>
-                    Our primary executive corridor. Timely drops and pickups from Rajiv Gandhi International Airport (RGIA).
-                </div>
-                <div class="grid-item">
-                    <strong>Raichur to Bangalore (Bengaluru)</strong>
-                    Seamless long-haul transits mapped for corporate clients, IT professional transfers, and overnight outstation journeys.
-                </div>
-                <div class="grid-item">
-                    <strong>Raichur to Goa Tourism Packages</strong>
-                    Custom holiday packages utilizing luxury Tempo Travellers or premium Urbania vans for group leisure tours.
-                </div>
-                <div class="grid-item">
-                    <strong>Raichur to Hubli & Mysore Loops</strong>
-                    Inter-district connectivity setups built for commercial dealers, commercial works, and heritage holiday tours.
-                </div>
-                <div class="grid-item">
-                    <strong>Raichur to Udupi Coastal Travel</strong>
-                    Smooth western-ghat transits configured for pilgrimage, academic transfers, and coastal holidays.
-                </div>
-                <div class="grid-item">
-                    <strong>Raichur to Kurnool & Gadwal</strong>
-                    Highly affordable point-to-point regional taxi transits optimized for local trading circles and swift family visits.
-                </div>
-                <div class="grid-item">
-                    <strong>Raichur to Pithapur Pilgrimage</strong>
-                    Specialized heavy vehicle arrangements (Cruiser/Toofan/TT) structured for hassle-free spiritual group yatras.
-                </div>
-                <div class="grid-item">
-                    <strong>Raichur to Kuruvapur Dattatreya Temple</strong>
-                    Highly frequent tourist vehicle deployments ensuring seamless group transits to key regional access points.
+<section id="routes">
+    <h2>POPULAR OUTSTATION PREMIUM ROUTES</h2>
+    <div class="routes-grid">
+        
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=400&q=80" alt="Raichur to Hyderabad Taxi">
+            <div class="route-details">
+                <h3>Raichur to Hyderabad</h3>
+                <p>Fast track highway drop packages from Raichur to Hyderabad city.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Hyderabad." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
                 </div>
             </div>
         </div>
 
-        <!-- REVIEWS SECTION -->
-        <div id="reviews" class="section">
-            <h2>Customer Reviews & Testimonials</h2>
-            <div class="review">
-                "We rented a 16-seater Force Urbania for our corporate team trip from Raichur to Hyderabad Airport. The vehicle was spotless, air conditioning was fantastic, and the billing was completely transparent. Highly recommended for executive travel!"
-                <span class="review-author">— Anand Rao, Corporate Travel Manager</span>
-            </div>
-            <div class="review">
-                "Our family group booked a 10-seater Cruiser for a pilgrimage to Kuruvapur Dattatreya Temple and Pithapur. The vehicle handled the rough rural roads easily. Best taxi service in Raichur."
-                <span class="review-author">— Meenakshi Shastry, Family Tour Organizer</span>
-            </div>
-            <div class="review">
-                "Amazing outstation package from Raichur to Goa in a 13-seater Tempo Traveller. The pushback seats made a long journey incredibly comfortable. No hidden toll fees or charges."
-                <span class="review-author">— Vikram Malhotra, Holiday Group Coordinator</span>
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=400&q=80" alt="Raichur to Bangalore Cab">
+            <div class="route-details">
+                <h3>Raichur to Bangalore</h3>
+                <p>Comfortable long distance highway transit from Raichur to Bengaluru City.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Bangalore." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
             </div>
         </div>
 
-        <!-- CONTACT & LIVE GOOGLE MAP SECTION -->
-        <div id="contact" class="section">
-            <h2>Corporate Booking & Contact HQ</h2>
-            <p><strong>📍 Corporate Address:</strong> Naw Gate Road, Opp. Agriculture University, Near Basava Hospital, P.V. Nagar, Lingasugur, Raichur, Karnataka 584101</p>
-            <p><strong>📞 Booking Hotlines:</strong> +91 82774 57261</p>
-            <p><strong>💬 WhatsApp Business Desk:</strong> +91 82774 57261</p>
-            <p><strong>✉️ Business Email:</strong> taxiservicepopular@gmail.com</p>
-            <p><strong>⏰ Operation Windows:</strong> Open 24/7, 365 Days a Year</p>
-            
-            <h3>Our Live Office Location</h3>
-            <!-- Embedded Google Map targeting Agriculture University Area, Lingasugur Road, Raichur -->
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.844111246736!2d77.315000!3d16.205000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb9fa2fffff0001%3A0x0!2sAgriculture%20University%2C%20Raichur!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1542274431-75e6d62a9370?auto=format&fit=crop&w=400&q=80" alt="Raichur to Hubli Taxi">
+            <div class="route-details">
+                <h3>Raichur to Hubli</h3>
+                <p>Safe and budget-friendly highway rides from Raichur to Hubballi junctions.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Hubli." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=400&q=80" alt="Raichur to Udupi Taxi">
+            <div class="route-details">
+                <h3>Raichur to Udupi</h3>
+                <p>Scenic and smooth coastal road journey packages to Udupi temple city.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Udupi." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=400&q=80" alt="Raichur to Mysore Taxi">
+            <div class="route-details">
+                <h3>Raichur to Mysore</h3>
+                <p>Historical tour packages from Raichur directly to Mysuru Palace grounds.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Mysore." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1600100397608-f010e4da1b61?auto=format&fit=crop&w=400&q=80" alt="Raichur to Tirupati Taxi">
+            <div class="route-details">
+                <h3>Raichur to Tirupati</h3>
+                <p>Religious divine tours for families heading to Tirumala Venkateswara.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Tirupati." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Raichur to Goa Taxi">
+            <div class="route-details">
+                <h3>Raichur to Goa</h3>
+                <p>Premium vacation long drives with expert drivers for beach lovers.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Goa." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=400&q=80" alt="Raichur to Kurnool Taxi">
+            <div class="route-details">
+                <h3>Raichur to Kurnool</h3>
+                <p>Fast interstate commercial transit solutions directly to Kurnool hub.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Kurnool." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=400&q=80" alt="Raichur to Bellary Taxi">
+            <div class="route-details">
+                <h3>Raichur to Bellary</h3>
+                <p>On-time family outstation routes between neighboring regional cities.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Bellary." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1600100398463-8ab3b37b375c?auto=format&fit=crop&w=400&q=80" alt="Raichur to Hampi Taxi">
+            <div class="route-details">
+                <h3>Raichur to Hampi</h3>
+                <p>Incredible historical heritage tours directly to the ancient Hampi ruins.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Hampi." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=80" alt="Raichur to Gulbarga Taxi">
+            <div class="route-details">
+                <h3>Raichur to Gulbarga</h3>
+                <p>Safe and fast business travel packs from Raichur to Kalaburagi.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Gulbarga." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1599933310631-6f42e6bc8a4b?auto=format&fit=crop&w=400&q=80" alt="Raichur to Bidar Taxi">
+            <div class="route-details">
+                <h3>Raichur to Bidar</h3>
+                <p>Trusted outstation travel to northern Karnataka historical forts.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Bidar." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=400&q=80" alt="Raichur to Vijayawada Taxi">
+            <div class="route-details">
+                <h3>Raichur to Vijayawada</h3>
+                <p>Long route premium highway cruiser packages to Andhra Pradesh centers.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Vijayawada." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=400&q=80" alt="Raichur to Gokarna Taxi">
+            <div class="route-details">
+                <h3>Raichur to Gokarna</h3>
+                <p>Relaxing coastal multi-day tour bundles for friends and family groups.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Gokarna." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?auto=format&fit=crop&w=400&q=80" alt="Raichur to Coorg Taxi">
+            <div class="route-details">
+                <h3>Raichur to Coorg</h3>
+                <p>Hill station fresh escape tour drives to Coorg scenic valleys smoothly.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Coorg." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1626014303757-64174d39bc7f?auto=format&fit=crop&w=400&q=80" alt="Raichur to Kuravpur Taxi">
+            <div class="route-details">
+                <h3>Raichur to Kuravpur</h3>
+                <p>On-time affordable pilgrimage drop-offs to Kuravpur Sri Dattatreya kshetra.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Kuravpur." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1600100397608-f010e4da1b61?auto=format&fit=crop&w=400&q=80" alt="Raichur to Mantralayam Taxi">
+            <div class="route-details">
+                <h3>Raichur to Mantralayam</h3>
+                <p>Dedicated premium family travel packs to Mantralayam Raghavendra Matha.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Mantralayam." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80" alt="Raichur to Srisailam Taxi">
+            <div class="route-details">
+                <h3>Raichur to Srisailam</h3>
+                <p>Secure ghat road certified journeys to the holy Mallikarjuna Jyotirlinga.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Srisailam." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?auto=format&fit=crop&w=400&q=80" alt="Raichur to Paithanpur Taxi">
+            <div class="route-details">
+                <h3>Raichur to Paithanpur</h3>
+                <p>Smooth outstation drop configurations via top route commercial drivers.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Paithanpur." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=400&q=80" alt="Raichur to Shamshabad Airport drop">
+            <div class="route-details">
+                <h3>Raichur to Hyd Airport</h3>
+                <p>24/7 dedicated critical business airport drops directly via ORR highway.</p>
+                <div class="action-buttons">
+                    <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call Now</a>
+                    <a href="https://wa.me/918277457261?text=Hello%20Popular%20Taxi%20Service,%20I%20want%20to%20book%20a%20cab%20from%20Raichur%20to%20Hyderabad%20Airport." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                </div>
             </div>
         </div>
 
     </div>
+</section>
 
-    <footer>
-        <p>© 2026 Popular Taxi Service Raichur. All Rights Reserved. Optimized for Google Search Dominance.</p>
-    </footer>
+<section id="fleet">
+    <h2>OUR DIVERSIFIED COMMERCIAL FLEET</h2>
+    <div class="fleet-grid">
+        <div class="fleet-card">
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256801.png" alt="4 Seater Sedan">
+            <h3>4-Seater</h3>
+            <p>Premium clean Sedan for small family trips.</p>
+            <div class="action-buttons">
+                <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello,%20I%20want%20to%20book%20a%204-Seater%20Sedan." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+        <div class="fleet-card">
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256803.png" alt="6 Seater SUV">
+            <h3>6-Seater</h3>
+            <p>Spacious SUV option for active group travel.</p>
+            <div class="action-buttons">
+                <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello,%20I%20want%20to%20book%20a%206-Seater%20SUV." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+        <div class="fleet-card">
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256806.png" alt="7 Seater MPV">
+            <h3>7-Seater</h3>
+            <p>Luxury travel MPV setup with big luggage space.</p>
+            <div class="action-buttons">
+                <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello,%20I%20want%20to%20book%20a%207-Seater%20MPV." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+        <div class="fleet-card">
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256813.png" alt="10 Seater Cruiser">
+            <h3>10-Seater</h3>
+            <p>Perfect luxury Traveler for medium family tours.</p>
+            <div class="action-buttons">
+                <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello,%20I%20want%20to%20book%20a%2010-Seater%20Traveler." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+        <div class="fleet-card">
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256816.png" alt="13 Seater Urban Minibus">
+            <h3>13-Seater</h3>
+            <p>Premium high-roof minibus for long journeys.</p>
+            <div class="action-buttons">
+                <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello,%20I%20want%20to%20book%20a%2013-Seater%20Minibus." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+        <div class="fleet-card">
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256812.png" alt="16 Seater Luxury Bus">
+            <h3>16-Seater</h3>
+            <p>Trusted luxury bus setups for corporate teams.</p>
+            <div class="action-buttons">
+                <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello,%20I%20want%20to%20book%20a%2016-Seater%20Bus." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+        <div class="fleet-card">
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256819.png" alt="22 Seater Coach">
+            <h3>22-Seater</h3>
+            <p>Heavy group luxury coach systems flawlessly.</p>
+            <div class="action-buttons">
+                <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello,%20I%20want%20to%20book%20a%2022-Seater%20Coach." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+        <div class="fleet-card">
+            <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000256823.png" alt="40/50 Seater Passenger Bus">
+            <h3>40/50-Seater</h3>
+            <p>Massive luxury buses for events and marriage groups.</p>
+            <div class="action-buttons">
+                <a href="tel:+918277457261" class="btn btn-call"><ion-icon name="call-outline"></ion-icon> Call</a>
+                <a href="https://wa.me/918277457261?text=Hello,%20I%20want%20to%20book%20a%2040/50-Seater%20Bus." class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why-choose-us">
+    <h2>WHY CHOOSE POPULAR TAXI SERVICE</h2>
+    <div class="reasons-grid">
+        <div class="reason">
+            <ion-icon name="shield-checkmark-outline"></ion-icon>
+            <h3>VERIFIED DRIVERS</h3>
+            <p>Professional network of highly verified, secure commercial drivers.</p>
+        </div>
+        <div class="reason">
+            <ion-icon name="wallet-outline"></ion-icon>
+            <h3>BEST PRICING</h3>
+            <p>Super affordable rates with 100% price transparency and zero hidden fees.</p>
+        </div>
+        <div class="reason">
+            <ion-icon name="sparkles-outline"></ion-icon>
+            <h3>CLEAN & COMFORTABLE</h3>
+            <p>Sanitized premium vehicles tailored for perfect long journeys.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="logo-container">
+        <img src="https://taxiservicepopular-coder.github.io/Populartaxiservice/images/1000329703.png" alt="POPULAR TAXI SERVICE RAICHUR Logo">
+    </div>
+    <p>&copy; 2026 POPULAR TAXI SERVICE RAICHUR. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
